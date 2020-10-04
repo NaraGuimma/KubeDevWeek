@@ -8,7 +8,7 @@
  
  The main idea is to create docker images, run them in containers and as well use kubernetes to manage the conatiner(S) created. 
  
- We used a node.js application that can be found at https://github.com/KubeDev/api-produto
+ We used an application that can be found at https://github.com/KubeDev/api-produto
  
  From that, it was included a Dockerfile, .dockerignore, and kubernetes files for the database and the application (deployment.yaml and service.yaml for each)
  

@@ -1,0 +1,22 @@
+apiVerson: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplicaset
+  labels:
+    app: nginxcolor
+    version: blue
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: nginx-color
+    template:
+    metadata:
+      labels:
+        app: nginx-color
+    spec:
+      containers:
+        - name: web
+          image: kubedevio/nginx-color:blue
+          ports:
+            - containerPort: 80

@@ -32,6 +32,6 @@
  *docker container ls*  ------ get the container ID you want to remove.
  
  
- *docker container rm -f <paste the container ID here>*
+ *docker container rm -f  <<paste the container ID here>>*
  
  
